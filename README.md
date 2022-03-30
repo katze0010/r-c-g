@@ -1,1 +1,1 @@
-# r-c-g
+my own Random Color Generator :D
