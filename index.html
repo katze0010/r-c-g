@@ -5,39 +5,10 @@
     <meta charset="utf-8">
     <title></title>
     <style>
-        body {
-            margin: 0;
-        }
-
-        .colorpad {
-            height: 120px;
-            width: 120px;
-            border-radius: 10px;
-            margin: 10px;
-        }
-
-        .colorpads {
-            display: flex;
-        }
-
-        button {
-            width: 100%;
-        }
-
-        .main {
-            width: fit-content;
-            background: #eee;
-        }
+        body{margin:0}.colorpad{height:120px;width:120px;border-radius:10px;margin:10px}.colorpads{display:flex}button{width:100%}.main{width:fit-content;background:#eee}
     </style>
     <script type="text/javascript">
-        function RCG() {
-            var letters = '0123456789abcdef';
-            var color = '#';
-            for (var i = 0; i < 6; i += 1) {
-                color += letters[Math.floor(Math.random() * 16)]
-            }
-            return color
-        }
+        function RCG(){var letters='0123456789abcdef';var color='#';for(var i=0;i<6;i+=1){color+=letters[Math.floor(Math.random()*16)]}return color}
 
         function SRC() {
             document.getElementById("colorpad1").style.background = RCG();
