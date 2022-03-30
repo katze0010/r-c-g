@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #colorpad {
+            height: 120px;
+            width: 120px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .colorpads {
+            display: flex;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        .main {
+            width: fit-content;
+            background: #eee;
+        }
+    </style>
+    <script type="text/javascript">
+        function RCG(){var letters='0123456789abcdef';var color='#';for(var i=0;i<6;i+=1){color+=letters[Math.floor(Math.random()*16)]}return color}
+
+        function SRC() {
+            $(".colorpad1").css("background-color", RCG());
+            $(".colorpad2").css("background-color", RCG());
+            $(".colorpad3").css("background-color", RCG());
+            $(".colorpad4").css("background-color", RCG());
+            $(".colorpad5").css("background-color", RCG());
+            $(".colorpad6").css("background-color", RCG());
+            $(".colorpad7").css("background-color", RCG());
+            $(".colorpad8").css("background-color", RCG());
+            $(".colorpad9").css("background-color", RCG());
+            $(".colorpad10").css("background-color", RCG());
+            $(".colorpad11").css("background-color", RCG());
+            $(".colorpad12").css("background-color", RCG());
+            $(".colorpad13").css("background-color", RCG());
+            $(".colorpad14").css("background-color", RCG());
+            $(".colorpad15").css("background-color", RCG());
+            $(".colorpad16").css("background-color", RCG());
+        }
+    </script>
+    <script src="jquery-3.6.0.slim.min.js"></script>
+</head>
+
+<body onload="SRC()">
+    <div class="main">
+        <button type="button" onclick="SRC()">reroll colors</button>
+        <div class="colorpads">
+            <div id="colorpad" class="colorpad1"></div>
+            <div id="colorpad" class="colorpad2"></div>
+            <div id="colorpad" class="colorpad3"></div>
+            <div id="colorpad" class="colorpad4"></div>
+        </div>
+        <div class="colorpads">
+            <div id="colorpad" class="colorpad5"></div>
+            <div id="colorpad" class="colorpad6"></div>
+            <div id="colorpad" class="colorpad7"></div>
+            <div id="colorpad" class="colorpad8"></div>
+        </div>
+        <div class="colorpads">
+            <div id="colorpad" class="colorpad9"></div>
+            <div id="colorpad" class="colorpad10"></div>
+            <div id="colorpad" class="colorpad11"></div>
+            <div id="colorpad" class="colorpad12"></div>
+        </div>
+        <div class="colorpads">
+            <div id="colorpad" class="colorpad13"></div>
+            <div id="colorpad" class="colorpad14"></div>
+            <div id="colorpad" class="colorpad15"></div>
+            <div id="colorpad" class="colorpad16"></div>
+        </div>
+    </div>
+</body>
+
+</html>
