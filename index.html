@@ -1,123 +1,93 @@
-<
-!DOCTYPE html >
-    <
-    html lang = "en" >
+<!DOCTYPE html>
+<html lang="en">
 
-    <
-    head >
-    <
-    meta charset = "utf-8" >
-    <
-    title > < /title> <
-    style >
-    body {
-        margin: 0;
-    }
-
-    .colorpad {
-        height: 120 px;
-        width: 120 px;
-        border - radius: 10 px;
-        margin: 10 px;
-    }
-
-    .colorpads {
-        display: flex;
-    }
-
-button {
-    width: 100 % ;
-}
-
-.main {
-    width: fit - content;
-    background: #eee;
-} <
-/style> <
-script type = "text/javascript" >
-    function RCG() {
-        var letters = '0123456789abcdef';
-        var color = '#';
-        for (var i = 0; i < 6; i += 1) {
-            color += letters[Math.floor(Math.random() * 16)]
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
         }
-        return color
-    }
 
-function SRC() {
-    document.getElementById("colorpad1").style.background = RCG();
-    document.getElementById("colorpad2").style.background = RCG();
-    document.getElementById("colorpad3").style.background = RCG();
-    document.getElementById("colorpad4").style.background = RCG();
-    document.getElementById("colorpad5").style.background = RCG();
-    document.getElementById("colorpad6").style.background = RCG();
-    document.getElementById("colorpad7").style.background = RCG();
-    document.getElementById("colorpad8").style.background = RCG();
-    document.getElementById("colorpad9").style.background = RCG();
-    document.getElementById("colorpad10").style.background = RCG();
-    document.getElementById("colorpad11").style.background = RCG();
-    document.getElementById("colorpad12").style.background = RCG();
-    document.getElementById("colorpad13").style.background = RCG();
-    document.getElementById("colorpad14").style.background = RCG();
-    document.getElementById("colorpad15").style.background = RCG();
-    document.getElementById("colorpad16").style.background = RCG();
-} <
-/script> <
-/head>
+        .colorpad {
+            height: 120px;
+            width: 120px;
+            border-radius: 10px;
+            margin: 10px;
+        }
 
-<
-body onload = "SRC()" >
-    <
-    div class = "main" >
-    <
-    button type = "button"
-onclick = "SRC()" > reroll colors < /button> <
-    div class = "colorpads" >
-    <
-    div class = "colorpad"
-id = "colorpad1" > < /div> <
-    div class = "colorpad"
-id = "colorpad2" > < /div> <
-    div class = "colorpad"
-id = "colorpad3" > < /div> <
-    div class = "colorpad"
-id = "colorpad4" > < /div> <
-    /div> <
-    div class = "colorpads" >
-    <
-    div class = "colorpad"
-id = "colorpad5" > < /div> <
-    div class = "colorpad"
-id = "colorpad6" > < /div> <
-    div class = "colorpad"
-id = "colorpad7" > < /div> <
-    div class = "colorpad"
-id = "colorpad8" > < /div> <
-    /div> <
-    div class = "colorpads" >
-    <
-    div class = "colorpad"
-id = "colorpad9" > < /div> <
-    div class = "colorpad"
-id = "colorpad10" > < /div> <
-    div class = "colorpad"
-id = "colorpad11" > < /div> <
-    div class = "colorpad"
-id = "colorpad12" > < /div> <
-    /div> <
-    div class = "colorpads" >
-    <
-    div class = "colorpad"
-id = "colorpad13" > < /div> <
-    div class = "colorpad"
-id = "colorpad14" > < /div> <
-    div class = "colorpad"
-id = "colorpad15" > < /div> <
-    div class = "colorpad"
-id = "colorpad16" > < /div> <
-    /div> <
-    /div> <
-    /body>
+        .colorpads {
+            display: flex;
+        }
 
-    <
-    /html>
+        button {
+            width: 100%;
+        }
+
+        .main {
+            width: fit-content;
+            background: #eee;
+        }
+    </style>
+    <script type="text/javascript">
+        function RCG() {
+            var letters = '0123456789abcdef';
+            var color = '#';
+            for (var i = 0; i < 6; i += 1) {
+                color += letters[Math.floor(Math.random() * 16)]
+            }
+            return color
+        }
+
+        function SRC() {
+            document.getElementById("colorpad1").style.background = RCG();
+            document.getElementById("colorpad2").style.background = RCG();
+            document.getElementById("colorpad3").style.background = RCG();
+            document.getElementById("colorpad4").style.background = RCG();
+            document.getElementById("colorpad5").style.background = RCG();
+            document.getElementById("colorpad6").style.background = RCG();
+            document.getElementById("colorpad7").style.background = RCG();
+            document.getElementById("colorpad8").style.background = RCG();
+            document.getElementById("colorpad9").style.background = RCG();
+            document.getElementById("colorpad10").style.background = RCG();
+            document.getElementById("colorpad11").style.background = RCG();
+            document.getElementById("colorpad12").style.background = RCG();
+            document.getElementById("colorpad13").style.background = RCG();
+            document.getElementById("colorpad14").style.background = RCG();
+            document.getElementById("colorpad15").style.background = RCG();
+            document.getElementById("colorpad16").style.background = RCG();
+        }
+    </script>
+</head>
+
+<body onload="SRC()">
+    <div class="main">
+        <button type="button" onclick="SRC()">reroll colors</button>
+        <div class="colorpads">
+            <div class="colorpad" id="colorpad1"></div>
+            <div class="colorpad" id="colorpad2"></div>
+            <div class="colorpad" id="colorpad3"></div>
+            <div class="colorpad" id="colorpad4"></div>
+        </div>
+        <div class="colorpads">
+            <div class="colorpad" id="colorpad5"></div>
+            <div class="colorpad" id="colorpad6"></div>
+            <div class="colorpad" id="colorpad7"></div>
+            <div class="colorpad" id="colorpad8"></div>
+        </div>
+        <div class="colorpads">
+            <div class="colorpad" id="colorpad9"></div>
+            <div class="colorpad" id="colorpad10"></div>
+            <div class="colorpad" id="colorpad11"></div>
+            <div class="colorpad" id="colorpad12"></div>
+        </div>
+        <div class="colorpads">
+            <div class="colorpad" id="colorpad13"></div>
+            <div class="colorpad" id="colorpad14"></div>
+            <div class="colorpad" id="colorpad15"></div>
+            <div class="colorpad" id="colorpad16"></div>
+        </div>
+    </div>
+</body>
+
+</html>
